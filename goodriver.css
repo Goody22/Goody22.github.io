@@ -4,24 +4,6 @@
 body {background-color: #e5dbcf;
 	 
 }
-@media (max-width: 768){
-	header{ pading: 20px 5px;
-	}
-	nav{flex-direction: column;
-		border-radius: 15px;
-		align-items: center;
-	}
-	
-	#wrapper{width: 95%;
-	}
-	
-	#homepic-1, #homepic-2{float: none;
-						   display:block;
-						   margin: 10px auto;
-						   max-width: 100%;
-	}
-}
-	
 
 header {display: flex;
 		flex-direction: column;
