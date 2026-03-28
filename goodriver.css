@@ -103,4 +103,23 @@ footer a:hover {color: white;}
 	   font-weight: bold;
 	   text-align: center;  
 }
+@media (max-width: 600px) {
+	nav {flex-direction: column;
+		 border-radius: 15px:
+	}
+	nav a {text-align: center;
+	       border-bottom: 1px solid #b8a894;
+		   padding: 15px;
+	}
+	nav a: last-child{ border-bottom: none;
+	}
+	#homepic-1, #homepic-2 {float: none;
+							display: block;
+							margin: 20px auto;
+	}
+	main p{font-size: 18px;
+		   text-align: left;
+	}
+
+}
 
