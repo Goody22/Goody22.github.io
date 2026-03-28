@@ -1,0 +1,64 @@
+/*Trevor Good*/
+/*Good River */
+
+body {background-color: #e5dbcf;
+	  color: #2c241e;
+	  font-family: Copperplate, Papyrus, fantasy;
+	  margin: 0;
+	  line-height: 1.4; 
+}
+
+#wrapper {margin: 0 auto;
+		  width: 90%; 
+		  max-width: 1200px;
+}
+
+header {display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		padding: 20px;
+}
+
+h3 {text-align: center;
+	font-family: Copperplate, Papyrus, fantasy;
+}
+
+nav {display: flex;
+	 justify-content: center;
+	 background-color: #c9b9a5;
+	 padding: 10px;
+	 border-radius: 50px;
+	 border-bottom: 20px;
+}
+
+nav a{text-decoration:none;
+	  color: #2c241e;
+	  padding: 10px 20px;
+	  transition: 0.3s;
+}
+
+img {max-width: 100%;
+	 height: auto;
+	 border-radius: 10px;
+}
+	
+@media (max-width: 600px) {
+	nav {flex-direction: column;
+		 border-radius: 15px:
+	}
+	nav a {text-align: center;
+	       border-bottom: 1px solid #b8a894;
+		   padding: 15px;
+	}
+	nav a: last-child{ border-bottom: none;
+	}
+	#homepic-1, #homepic-2 {float: none;
+							display: block;
+							margin: 20px auto;
+	}
+	main p{font-size: 18px;
+		   text-align: left;
+	}
+
+}
