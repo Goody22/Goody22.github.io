@@ -22,9 +22,16 @@ header {display: flex;
 		padding: 40px 20px;
 }
 
+.header-top-row{display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 50px;
+				width: 100%;
+			   }
+
 nav {display: flex;
 	 justify-content: center;
-	 background-color: #black;
+	 background-color: black;
 	 padding: 10px;
 	 border-radius: 50px;
 	 border-bottom: 20px;
