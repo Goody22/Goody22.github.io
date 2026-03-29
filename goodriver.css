@@ -21,6 +21,7 @@ nav {display: flex;
 	 padding-bottom: 0.50em; 
 	 padding-right: 1em; 
 	 border-radius: 20px;
+	 width: auto;
 }
 
 nav a{text-decoration:none;
