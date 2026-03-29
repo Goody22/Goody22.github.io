@@ -4,7 +4,7 @@
 body {background-color: #e5dbcf;
 	 
 }
-header {display: flex-center;
+header {display: flex;
 		justify-content: space-evenly;
 		align-items: center;
 }
