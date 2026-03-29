@@ -71,7 +71,7 @@ footer a:hover {color: white;}
 
 #headwrap {margin: 0 auto;
 		  width: auto; 
-		 /* padding: 1em; */
+		  padding: 1em; 
 		  text-align:center;
 }
 		
@@ -80,6 +80,8 @@ footer a:hover {color: white;}
 		  padding: 1em; 
 		  text-align:center;
 		  padding-bottom: 60px;
+		  item-align: center;
+		  
 }
 
 #homepic-1 {float:left;
