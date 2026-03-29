@@ -90,7 +90,7 @@ footer a:hover {color: white;}
 		 margin: 10px;
 }
 .gallery{margin: 10px;
-		 float: center;
+		/* float: center;*/
 		 width: 240px;
 }
 
