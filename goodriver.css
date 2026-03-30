@@ -45,7 +45,7 @@ h3 {text-align: center;
 
   .mobile-only {
     display: block !important;
-    width: 100%;
+    width: 20%;
     background-color: black;
     border-radius: 10px;
   }
