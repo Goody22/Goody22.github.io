@@ -19,16 +19,6 @@ h3 {text-align: center;
 	font-family: Copperplate, Papyrus, fantasy;
 }
 
-nav {display: flex;
-	 justify-content: space-evenly;
-	 background-color: black;
-	 padding-top: 0.50em; 
-	 padding-bottom: 0.50em; 
-	 padding-right: 1em; 
-	 border-radius: 20px;
-	 width: auto;
-}
-
 nav a{text-decoration:none;
 	  color: #e5dbcf;
 	  font-family: Copperplate, Papyrus, fantasy;
@@ -103,8 +93,16 @@ nav a:hover {color: white;}
 /* Mobile: Hide the desktop version when the screen is 768px or smaller */
 @media screen and (max-width: 768px) {
   .desktop-only {
-    display: none !important;
-  }
+     display: none !important;
+	 justify-content: space-evenly;
+	 background-color: black;
+	 padding-top: 0.50em; 
+	 padding-bottom: 0.50em; 
+	 padding-right: 1em; 
+	 border-radius: 20px;
+	 width: auto;
+	}
+  
 }
 
 
