@@ -156,7 +156,7 @@ footer a:hover {color: white;}
 		  text-align:center;
 		  padding-top: 25px;
 		  padding-bottom: 100px;
-		  
+		  justify-content: space-evenly;	  
 }
 
 #homepic-1 {float:left;
