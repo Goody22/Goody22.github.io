@@ -46,7 +46,7 @@ h3 {text-align: center;
   .mobile-only {
     display: block !important;
     width: 20%;
-    background-color: black;
+    background-color: #e5dbcf;
     border-radius: 10px;
   }
 
@@ -69,7 +69,7 @@ h3 {text-align: center;
     width: 25px;
     height: 3px;
     margin: 5px 0;
-    background-color: #e5dbcf;
+    background-color: black;
   }
 
   /* The List - HIDDEN BY DEFAULT */
