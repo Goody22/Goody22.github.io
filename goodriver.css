@@ -57,8 +57,7 @@ nav a:hover {color: white;}
   .nav-list.active {
     display: flex; /* Show links when "active" class is added */
   }
-}
-.bar {
+	.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -66,6 +65,8 @@ nav a:hover {color: white;}
   background-color: white;
   transition: 0.3s;
 }
+}
+
 @media screen and (min-width: 769px) {
   .mobile-only {
     display: none !important;
