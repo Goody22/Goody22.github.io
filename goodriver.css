@@ -58,6 +58,14 @@ nav a:hover {color: white;}
     display: flex; /* Show links when "active" class is added */
   }
 }
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+  transition: 0.3s;
+}
 @media screen and (min-width: 769px) {
   .mobile-only {
     display: none !important;
