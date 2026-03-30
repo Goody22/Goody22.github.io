@@ -58,6 +58,18 @@ nav a:hover {color: white;}
     display: flex; /* Show links when "active" class is added */
   }
 }
+@media screen and (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/* Mobile: Hide the desktop version when the screen is 768px or smaller */
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
 
 
 header-2 {font-family: Copperplate, Papyrus, fantasy;
