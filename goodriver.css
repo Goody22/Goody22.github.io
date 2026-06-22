@@ -142,7 +142,7 @@ main a, main div, .gallery {
 
 main img {
   width: 260px !important;
-  height: 200px !important;
+  height: 220px !important;
   object-fit: fill;    /* Keeps native sharp rendering values */
 }
 
