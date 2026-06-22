@@ -184,11 +184,14 @@ footer a:hover {
 
 .goat-card img {
   border-radius: 4px;
-  width: 100%;       /* Allows it to scale down smoothly on small screens */
-  max-width: 220px;  /* STRICTLY stops the image from stretching past its true size */
-  height: 170px;     /* Keeps a perfectly uniform height across all three */
-  object-fit: cover; /* Ensures the image fills its box beautifully without distortion */
+  display: block;
+  margin: 0 auto;    /* Centers the image perfectly inside its grid column */
+  
+  /* This protects the quality: */
+  max-width: 100%;   /* Keeps it responsive on small screens */
+  height: auto;      /* Lets the height adjust naturally so it never distorts or blurs */
 }
+
 .desc {
   padding: 5px;
   font-family: Copperplate, Papyrus, fantasy;
