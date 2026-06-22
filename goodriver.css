@@ -183,10 +183,10 @@ footer a:hover {
 }
 
 .goat-card img {
-  border-radius: 5px;
-  width: 100%;     /* Fills the column width evenly */
-  height: 300px;   /* Sets a matching uniform height for all rows */
-  object-fit: cover; /* Crops the images evenly to fit the box without distortion */
+  border-radius: 4px;
+  width: 220px;   /* Forces the exact width */
+  height: 170px;  /* Forces the exact height */
+  object-fit: cover; /* Prevents the image from looking squished or distorted */
 }
 
 .desc {
