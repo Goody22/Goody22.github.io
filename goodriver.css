@@ -184,8 +184,9 @@ footer a:hover {
 
 .goat-card img {
   border-radius: 4px;
-  max-width: 100%;
-  height: auto;
+  width: 100%;     /* Fills the column width evenly */
+  height: 200px;   /* Sets a matching uniform height for all rows */
+  object-fit: cover; /* Crops the images evenly to fit the box without distortion */
 }
 
 .desc {
