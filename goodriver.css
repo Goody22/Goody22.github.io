@@ -167,14 +167,13 @@ footer a:hover {
 /* --- New Gallery Grid Layout --- */
 .goat-grid {
   display: grid;
-  /* Changed minmax to match your exact image width (220px) */
+  /* This allows the grid to adapt nicely without forcing images to stretch */
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  max-width: 850px; /* Snugs the columns closer together */
+  max-width: 900px; 
   margin: 30px auto;
   justify-items: center;
 }
-
 .goat-card {
   text-decoration: none;
   color: inherit;
@@ -185,15 +184,11 @@ footer a:hover {
 
 .goat-card img {
   border-radius: 4px;
-  width: 220px;
-  height: 170px;
-  object-fit: cover;
-  
-  /* Forces the browser to render scaled images with crisp, sharp edges */
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  width: 100%;       /* Allows it to scale down smoothly on small screens */
+  max-width: 220px;  /* STRICTLY stops the image from stretching past its true size */
+  height: 170px;     /* Keeps a perfectly uniform height across all three */
+  object-fit: cover; /* Ensures the image fills its box beautifully without distortion */
 }
-
 .desc {
   padding: 5px;
   font-family: Copperplate, Papyrus, fantasy;
