@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Senior Does</title>
+		<!--Trevor Good -->
+		<!--My first web page-->
+		<link href="goodriver.css" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="headwrap">
+		<header>
+			<h1>
+				<a href="index.html">
+					<img src="goodriver.png" width="350" height="250" alt="Logo">
+				</a>
+			</h1>
+		</header>	
+		</div>
+		<nav class="desktop-only">
+			<img src="leftsil.png" width="50" height="40" alt="lamancha">
+			<a href="index.html">Home</a> &nbsp;
+		 	<a href="senior.html">Senior Does</a> &nbsp;
+			<a href="junior.html">Junior Does</a> &nbsp;
+			<a href="herdsires.html">Herd Sires</a> &nbsp;
+			<a href="forsale.html">For sale</a> 
+			<img src="rightsil.png" width="50" height="40" alt="lamancha">
+		</nav>
+		<nav class="mobile-only">
+			<div class="mobile-header">
+					<div class="menu-toggle" id="mobile-menu">
+				       <span class="bar"></span>
+				       <span class="bar"></span>
+				       <span class="bar"></span>
+				    </div>
+				  
+				
+				  <ul class="nav-list" id="nav-list">
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="senior.html">Senior Does</a></li>
+				    <li><a href="junior.html">Junior Does</a></li>
+				    <li><a href="herdsires.html">Herd Sires</a></li>
+				    <li><a href="forsale.html">For Sale</a></li>
+				  </ul>
+			</nav>
+		</nav>
+		<div id="wrapper">
+			<h2>Click on picture for full pedigree. </h2>
+			<main>
+				
+				<!-- Goat 1 (Opal) -->
+				<div class="gallery">
+					<a href="https://genetics.adga.org/GoatDetail.aspx?RegNumber=L002404409">
+						<img src="Opal.jpeg" width="220" height="170" alt="D5 Creek Max Pearl's Opal">
+						<div class="desc">D5 Creek Max Pearl's Opal</div>
+					</a>
+				</div>
+        <p>
+          We want to start introducing the stars of our herd. Up first is Opal. 
+          A 2 year old doe who will be a second freshener this year. 
+          Opal is a wide doe with nice depth of body. 
+          She’s very angular with a strong front end assembly and great general appearance. She has a very well attached udder as well. 
+          Strong feet and legs too! 
+        </p>
+				
+			</main>
+		</div>
+		<footer>
+			<a href="index.html">Home</a> &nbsp;
+			<a href="senior.html">Senior Does</a> &nbsp;
+			<a href="junior.html">Junior Does</a> &nbsp;
+			<a href="herdsires.html">Herd Sires</a> &nbsp;
+			<a href="forsale.html">For sale</a> <br>
+			<p> Desgined By Trevor Good <br>
+				Copyright &copy; 2024 Good River Lamanchas<br>
+				Contact: <a href="trevorgood00@gmail.com">trevorgood00@gmail.com</a>	
+			</p>
+		</footer>
+		<script>
+  			const menuBtn = document.getElementById('mobile-menu');
+  			const navList = document.getElementById('nav-list');
 
+  			menuBtn.onclick = function() {
+    		navList.classList.toggle('active');
+  			};
+		</script>
+	</body>
+</html>
