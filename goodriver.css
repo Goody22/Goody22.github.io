@@ -129,20 +129,20 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;           /* Sets space between your columns */
-  max-width: 900px;    /* Prevents layout from getting too wide */
+  max-width: 1000px;    /* Prevents layout from getting too wide */
   margin: 30px auto;   /* Centers the gallery layout on the screen */
 }
 
 /* Forces the image block targets to stick exactly to your 220px native resolution */
 main a, main div, .gallery {
   display: block;
-  width: 220px;
+  width: 260px;
   text-align: center;
 }
 
 main img {
-  width: 220px !important;
-  height: 170px !important;
+  width: 260px !important;
+  height: 200px !important;
   object-fit: fill;    /* Keeps native sharp rendering values */
 }
 
