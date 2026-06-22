@@ -211,16 +211,19 @@ footer a:hover {
 }
 
 .udder-container{
-	display: flex;
+	display: flex !important;
+	flex-direction: row !important;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 30px;
 	margin: 25px auto;
-	max-width: 1000px;
+	width: 100% !important;
+	max-width: 800px;
 }
 
 .udder-card{
-	display: block;
+	display: inline-block !important;
+	width: 320px !important;
 	text-align: center;
 }
 
