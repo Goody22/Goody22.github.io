@@ -1,34 +1,22 @@
-/* Trevor Good */
-/* Good River */
+/*Trevor Good*/
+/*Good River */
 
-body {
-  background-color: #e5dbcf;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body {background-color: #e5dbcf;
+	  min-height: 100vh;
+	  display: flex;
+	  flex-direction: column;
+	 
+}
+main{ flex: 1;
+	}
+header {display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 }
 
-main {
-  flex: 1;
-}
 
-header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-h2 {
-  font-family: Copperplate, Papyrus, fantasy;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-h3 {
-  text-align: center;
-  font-family: Copperplate, Papyrus, fantasy;
-  font-weight: bold;
-  font-size: 40px;
+h3 {text-align: center;
+	font-family: Copperplate, Papyrus, fantasy;
 }
 
 /* --- 1. Desktop Nav (Big Screens) --- */
@@ -110,99 +98,85 @@ h3 {
   }
 }
 
-nav a {
-  text-decoration: none;
-  color: #e5dbcf;
-  font-family: Copperplate, Papyrus, fantasy;
-  padding-top: 0.50em; 
-  padding-left: 1.5em;
+nav a{text-decoration:none;
+	  color: #e5dbcf;
+	  font-family: Copperplate, Papyrus, fantasy;
+	  padding-top: 0.50em; 
+	  padding-left: 1.5em;
 }
-  
-nav a:hover {
-  color: white;
+	
+nav a:hover {color: white;}
+
+
+
+header-2 {font-family: Copperplate, Papyrus, fantasy;
+		  font-weight: bold;
+		  font-size: 25px;
+			}
+
+header-3 {font-family: Copperplate, Papyrus, fantasy;
+		  font-weight: bold;
+		  font-size: 40px;
+			}
+main {overflow:hidden;
+}	
+
+
+main p{text-align: space-evenly;
+	   font-size: 22px;
+	   font-family: Copperplate, Papyrus, fantasy;
+	   
+}
+	
+footer  {text-align: center;
+		 background-color: black;
+		 width: 100%;
+		 padding-top: 1em;
+		 color: #e5dbcf;
+		 font-family: Copperplate, Papyrus, fantasy;
+		 margin: 0;
 }
 
-main p {
-  text-align: center;
-  font-size: 22px;
-  font-family: Copperplate, Papyrus, fantasy;
-}
-  
-footer {
-  text-align: center;
-  background-color: black;
-  width: 100%;
-  padding-top: 1em;
-  color: #e5dbcf;
-  font-family: Copperplate, Papyrus, fantasy;
-  margin: 0;
+footer a{text-decoration:none;
+		color: #e5dbcf;
+		font-family: Copperplate, Papyrus, fantasy;
 }
 
-footer a {
-  text-decoration: none;
-  color: #e5dbcf;
-  font-family: Copperplate, Papyrus, fantasy;
+footer a:hover {color: white;}
+
+#headwrap {margin: 0 auto;
+		  width: auto; 
+		  padding: 1em; 
+		  text-align:center;
+}
+		
+#wrapper {margin: 0 auto;
+		  width: 85%; 
+		  padding: 1em; 
+		  text-align:center;
+		  padding-top: 25px;
+		  padding-bottom: 100px;
+		  	  
 }
 
-footer a:hover {
-  color: white;
+#homepic-1 {float:left;
+		 margin: 10px;
+}
+#homepic-2 {float:right;
+		 margin: 10px;
+}
+.gallery{margin: 10px;
+		align-items: center;
+		 width: 200px;
 }
 
-#headwrap {
-  margin: 0 auto;
-  width: auto; 
-  padding: 1em; 
-  text-align: center;
-}
-    
-#wrapper {
-  margin: 0 auto;
-  width: 85%; 
-  padding: 1em; 
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 100px;         
+.gallery a{text-decoration:none;
+		   color: black;
 }
 
-/* --- New Gallery Grid Layout --- */
-.goat-grid {
-  display: grid;
-  /* Increased minimum size to 280px to make the pictures bigger */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;           /* Slightly more space between the bigger photos */
-  max-width: 1100px;   /* Allows the grid to spread out more on your monitor */
-  margin: 30px auto;
-  justify-items: center;
-}
-.goat-card {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.goat-card img {
-  border-radius: 6px;
-  width: 280px;        /* Forces them all to a larger, identical width */
-  height: 210px;       /* Forces them all to a larger, identical height */
-  object-fit: cover;   /* Scale and crop evenly so nothing stretches or blurs */
-}
-
-.desc {
-  padding: 5px;
-  font-family: Copperplate, Papyrus, fantasy;
-  font-weight: bold;
-  text-align: center;  
-}
-
-/* --- Legacy Image Floating (For Home Page Layouts) --- */
-#homepic-1 {
-  float: left;
-  margin: 10px;
-}
-
-#homepic-2 {
-  float: right;
-  margin: 10px;
+.desc {padding: 5px;
+	   padding-right: 1.5em;
+	   font-family: Copperplate, Papyrus, fantasy;
+	   font-weight: bold;
+	   text-align: center;  
 }
