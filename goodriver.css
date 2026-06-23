@@ -213,7 +213,7 @@ footer a:hover {
 .udder-container{
 	display: flex !important;
 	flex-direction: row !important;
-	flex-wrap: wrap;
+	flex-wrap: nowrap !important;
 	justify-content: center;
 	gap: 30px;
 	margin: 25px auto;
