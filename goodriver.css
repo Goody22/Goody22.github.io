@@ -229,7 +229,7 @@ footer a:hover {
 
 .udder-card img{
 	width: 320px !important;
-	height: 270px !important;
+	height: 100% !important;
 	object-fit: cover;
 	border-radius: 6px;
 }
