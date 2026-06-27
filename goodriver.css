@@ -1,5 +1,12 @@
 /*Trevor Good*/
 /*Good River */
+@font-face {
+    font-family: 'MyPapyrus';
+    src: url('papyrus.woff2') format('woff2'),
+         url('papyrus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
   background-color: #e5dbcf;
@@ -16,7 +23,7 @@ header {
 
 h3 {
   text-align: center;
-  font-family: Silverfake, Papyrus, Copperplate, fantasy;
+  font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
 }
 
 /* --- 1. Desktop Nav (Big Screens) --- */
@@ -102,7 +109,7 @@ h3 {
     border-top: 1px solid #333;
     display: block;
     padding-left: 0;
-	font-family:  Papyrus, Copperplate, fantasy;
+	font-family:  'MyPapyrus', Papyrus, Copperplate, fantasy;
 	/* Reset desktop padding */
   }
 }
@@ -110,7 +117,7 @@ h3 {
 nav a {
   text-decoration: none;
   color: #e5dbcf;
-  font-family: Papyrus, Copperplate, fantasy;
+  font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
   padding-top: 0.50em; 
   padding-left: 1.5em;
 }
@@ -120,13 +127,13 @@ nav a:hover {
 }
 
 .header-2 {
-  font-family: Papyrus, Copperplate, fantasy;
+  font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
   font-weight: bold;
   font-size: 25px;
 }
 
 .header-3 {
-  font-family: Papyrus, Copperplate, fantasy;
+  font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
   font-weight: bold;
   font-size: 40px;
 }
@@ -158,7 +165,7 @@ main img {
 main p {
   text-align: center;
   font-size: 22px;
-  font-family: Papyrus, Copperplate, fantasy;
+  font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
 }
 	
 footer {
@@ -167,14 +174,14 @@ footer {
   width: 100%;
   padding-top: 1em;
   color: #e5dbcf;
-  font-family: Papyrus, Copperplate, fantasy;
+  font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
   margin: 0;
 }
 
 footer a {
   text-decoration: none;
   color: #e5dbcf;
-  font-family: Papyrus, Copperplate, fantasy;
+  font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
 }
 
 footer a:hover {
@@ -214,7 +221,7 @@ footer a:hover {
 
 .desc {
   padding: 5px;
-  font-family: Papyrus, Copperplate, fantasy;
+  font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
   font-weight: bold;
   text-align: center;  
 }
