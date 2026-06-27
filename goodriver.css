@@ -101,7 +101,9 @@ h3 {
     text-align: center;
     border-top: 1px solid #333;
     display: block;
-    padding-left: 0; /* Reset desktop padding */
+    padding-left: 0;
+	font-family: Copperplate, Papyrus, fantasy;
+	/* Reset desktop padding */
   }
 }
 
@@ -117,13 +119,13 @@ nav a:hover {
   color: white;
 }
 
-header-2 {
+.header-2 {
   font-family: Copperplate, Papyrus, fantasy;
   font-weight: bold;
   font-size: 25px;
 }
 
-header-3 {
+.header-3 {
   font-family: Copperplate, Papyrus, fantasy;
   font-weight: bold;
   font-size: 40px;
