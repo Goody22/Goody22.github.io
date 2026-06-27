@@ -20,6 +20,10 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
+h2{
+	font-family: 'MyPapyrus', Papyrus, Copperplate, fantasy;
+}
+	
 
 h3 {
   text-align: center;
