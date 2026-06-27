@@ -55,6 +55,7 @@ h3 {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 20px;
+	postion: relative;
   }
 
   /* The Hamburger Icon */
@@ -80,6 +81,12 @@ h3 {
     padding: 0;
     margin: 0;
     background-color: #111;
+	position: absolute;
+	top: 55px;
+	left: 20px;
+	width: 140px;
+	z-index: 1000;
+	  
   }
 
   /* THIS SHOWS THE MENU - Triggered by JS */
