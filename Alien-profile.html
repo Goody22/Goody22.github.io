@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tattooine</title>
+		<!--Trevor Good -->
+		<!--My first web page-->
+		<link href="goodriver.css" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="headwrap">
+		<header>
+			<h1>
+				<a href="index.html">
+					<img src="goodriver.png" width="350" height="250" alt="Logo">
+				</a>
+			</h1>
+		</header>	
+		</div>
+		<nav class="desktop-only">
+			<img src="leftsil.png" width="50" height="40" alt="lamancha">
+			<a href="index.html">Home</a> &nbsp;
+		 	<a href="senior.html">Senior Does</a> &nbsp;
+			<a href="junior.html">Junior Does</a> &nbsp;
+			<a href="herdsires.html">Herd Sires</a> &nbsp;
+			<a href="forsale.html">For sale</a> 
+			<img src="rightsil.png" width="50" height="40" alt="lamancha">
+		</nav>
+		<nav class="mobile-only">
+			<div class="mobile-header">
+					<div class="menu-toggle" id="mobile-menu">
+				       <span class="bar"></span>
+				       <span class="bar"></span>
+				       <span class="bar"></span>
+				    </div>
+				  
+				
+				  <ul class="nav-list" id="nav-list">
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="senior.html">Senior Does</a></li>
+				    <li><a href="junior.html">Junior Does</a></li>
+				    <li><a href="herdsires.html">Herd Sires</a></li>
+				    <li><a href="forsale.html">For Sale</a></li>
+				  </ul>
+			</nav>
+		</nav>
+		<div id="wrapper">
+			<h2>Good River RP Scarlett</h2>
+			<main>
+				
+				<!-- Goat 1 (Opal) -->
+				<div class="gallery">
+					<a href="https://genetics.adga.org/GoatDetail.aspx?RegNumber=L002508454">
+						<img src="images/Scarlet.jpeg" width="220" height="200" alt="Good River RP Scarlett">
+						<h3>Click on picture for full pedigree. </h3>
+					</a>
+					
+				</div>
+      		<p>
+				Scarlett is a homebred doe! We love her for her balance, femininity, and dairyness. 
+				She’s long and level over her topline, with a smooth shoulder and sharp withers. 
+				She shows angularity and openness through the rib while maintaining depth and capacity. 
+				Overall, a clean, dairy doe that puts together a very complete and competitive package.
+			</p>
+				<div class="udder-container">
+					<div class="udder-card">
+						<img src="images/Scarlettfull.jpg" width="220" height="220" alt="Scarlett Full Udder">
+					</div>
+				
+					<div class="udder-card">
+						<img src="images/Scarlettside.jpg" width="220" height="220" alt="Scarlett Udder Side View">
+					</div>	
+				</div>
+	
+			</main>
+		</div>
+		<footer>
+			<a href="index.html">Home</a> &nbsp;
+			<a href="senior.html">Senior Does</a> &nbsp;
+			<a href="junior.html">Junior Does</a> &nbsp;
+			<a href="herdsires.html">Herd Sires</a> &nbsp;
+			<a href="forsale.html">For sale</a> <br>
+			<p> Desgined By Trevor Good <br>
+				Copyright &copy; 2024 Good River Lamanchas<br>
+				Contact: <a href="mailto:goodriverlamancha@gmail.com">goodriverlamancha@gmail.com</a>
+			</p>
+		</footer>
+		<script>
+  			const menuBtn = document.getElementById('mobile-menu');
+  			const navList = document.getElementById('nav-list');
 
+  			menuBtn.onclick = function() {
+    		navList.classList.toggle('active');
+  			};
+		</script>
+	</body>
+</html>
