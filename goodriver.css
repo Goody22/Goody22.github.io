@@ -308,3 +308,14 @@ tr:hover {
     font-size: 0.9em;
     font-weight: bold;
 }
+/* Keeps links in the breeding schedule black, even after they are visited */
+#breeding-schedule table a, 
+#breeding-schedule table a:visited {
+    color: inherit; /* Inherits the default text color (which is black) */
+    text-decoration: none; /* Keeps the underline removed */
+}
+
+/* Optional: Adds a gentle underline only when you hover over the name */
+#breeding-schedule table a:hover {
+    text-decoration: underline;
+}
