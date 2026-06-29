@@ -253,3 +253,58 @@ footer a:hover {
 	object-fit: cover;
 	border-radius: 6px;
 }
+
+/* Breeding Schedule Section */
+#breeding-schedule {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#breeding-schedule h2 {
+    font-family: 'Papyrus', sans-serif; /* Matches your vintage style heading */
+    color: #2c1d11; /* Earthy tone */
+    margin-bottom: 10px;
+}
+
+/* Responsive Table Wrapper */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Allows horizontal scrolling on small mobile screens */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.4); /* Subtle transparent overlay */
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #4a3525; /* Darker accent color for header row */
+    color: #f4eae1; /* Light text color for contrast */
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Soft hover effect */
+}
+
+/* Status Badges */
+.status-open {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
