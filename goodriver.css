@@ -319,3 +319,60 @@ tr:hover {
 #breeding-schedule table a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 600px) {
+  .table-container table, 
+  .table-container thead, 
+  .table-container tbody, 
+  .table-container th, 
+  .table-container td, 
+  .table-container tr { 
+    display: block; 
+  }
+
+  /* Hide the traditional desktop header row */
+  .table-container thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /* Turn each row into an independent card */
+  .table-container tr { 
+    border: 1px solid #ccc; 
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff; /* Changes background to pop out */
+  }
+
+  /* Format individual rows */
+  .table-container td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 45%; 
+    text-align: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .table-container td:last-child {
+    border-bottom: 0;
+  }
+
+  /* Add labels back to the left side of the screen */
+  .table-container td:nth-of-type(1):before { content: "Sire:"; }
+  .table-container td:nth-of-type(2):before { content: "Dam:"; }
+  .table-container td:nth-of-type(3):before { content: "Expected:"; }
+  .table-container td:nth-of-type(4):before { content: "Status:"; }
+
+  .table-container td:before { 
+    position: absolute;
+    left: 10px;
+    width: 40%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+}
