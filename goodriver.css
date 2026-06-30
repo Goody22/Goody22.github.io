@@ -336,44 +336,46 @@ tr:hover {
     left: -9999px;
   }
 
-  /* Turn each row into an independent card with nice spacing */
+  /* Turn each row into an independent card */
   .table-container tr { 
-    border: 1px solid rgba(74, 53, 37, 0.2); 
-    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    margin-bottom: 15px;
     border-radius: 8px;
-    padding: 12px;
+    padding: 10px;
     background-color: #fff; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
 
-  /* Format individual rows to wrap comfortably */
+  /* Format individual rows */
   .table-container td { 
     border: none;
     border-bottom: 1px solid #eee; 
     position: relative;
-    padding-left: 0 !important; /* Clears out the squeezed side margins */
-    text-align: left;           /* Aligns text cleanly to the left */
-    padding-top: 24px;          /* Makes room for the label above the text */
+    padding-left: 100px; /* Exact fixed spacing to let labels sit comfortably on the left */
+    text-align: left;    /* Aligns the goat names cleanly to the left */
+    padding-top: 8px;
     padding-bottom: 8px;
-    white-space: normal !important; 
-    word-break: break-word;     
-    font-size: 16px;
+    white-space: normal;
+    word-break: break-word;
   }
 
   .table-container td:last-child {
     border-bottom: 0;
   }
 
-  /* Move labels directly ABOVE the text content */
+  /* Add labels back to the left side of the screen (NO SPACES AROUND COLONS) */
+  .table-container td:nth-of-type(1):before { content: "Sire:"; }
+  .table-container td:nth-of-type(2):before { content: "Dam:"; }
+  .table-container td:nth-of-type(3):before { content: "Expected:"; }
+  .table-container td:nth-of-type(4):before { content: "Status:"; }
+
+  /* Style the labels on the left side */
   .table-container td:before { 
     position: absolute;
-    top: 4px;
-    left: 0;
-    width: 100%; 
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #777; /* Soft gray for the label headers */
+    left: 10px;
+    width: 80px; 
+    white-space: nowrap;
+    text-align: left;
     font-weight: bold;
+    color: #4a3525; /* Optional: matches your dark brown theme color */
   }
 }
