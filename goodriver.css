@@ -329,53 +329,51 @@ tr:hover {
     display: block; 
   }
 
-  /* Hide the traditional desktop header row */
+  /* Hide desktop headers */
   .table-container thead tr { 
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
 
-  /* Turn each row into an independent card */
+  /* Your nice white cards from the screenshot */
   .table-container tr { 
-    border: 1px solid #ccc; 
-    margin-bottom: 15px;
+    border: 1px solid #eee; 
+    margin-bottom: 20px;
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
     background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
   }
 
-  /* Format individual rows */
+  /* Center the text and clear out old side-paddings */
   .table-container td { 
     border: none;
-    border-bottom: 1px solid #eee; 
+    border-bottom: 1px solid #f9f9f9; 
     position: relative;
-    padding-left: 100px; /* Exact fixed spacing to let labels sit comfortably on the left */
-    text-align: left;    /* Aligns the goat names cleanly to the left */
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 28px; /* Leaves a perfect window of space above the name */
+    padding-bottom: 10px;
+    text-align: center; /* Keeps that clean centered look from your photo */
     white-space: normal;
-    word-break: break-word;
+    font-size: 16px;
   }
 
   .table-container td:last-child {
     border-bottom: 0;
   }
 
-  /* Add labels back to the left side of the screen (NO SPACES AROUND COLONS) */
-  .table-container td:nth-of-type(1):before { content: "Sire:"; }
-  .table-container td:nth-of-type(2):before { content: "Dam:"; }
-  .table-container td:nth-of-type(3):before { content: "Expected:"; }
-  .table-container td:nth-of-type(4):before { content: "Status:"; }
-
-  /* Style the labels on the left side */
+  /* Automatically pulls the label text and places it centered above the name */
   .table-container td:before { 
+    content: attr(data-label); /* Pulls "Sire", "Dam", etc., straight from HTML */
     position: absolute;
-    left: 10px;
-    width: 80px; 
-    white-space: nowrap;
-    text-align: left;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888; /* Sleek, muted gray header text */
     font-weight: bold;
-    color: #4a3525; /* Optional: matches your dark brown theme color */
   }
 }
