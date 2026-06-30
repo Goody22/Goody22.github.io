@@ -336,45 +336,44 @@ tr:hover {
     left: -9999px;
   }
 
-  /* Turn each row into an independent card */
+  /* Turn each row into an independent card with nice spacing */
   .table-container tr { 
-    border: 1px solid #ccc; 
-    margin-bottom: 15px;
+    border: 1px solid rgba(74, 53, 37, 0.2); 
+    margin-bottom: 20px;
     border-radius: 8px;
-    padding: 10px;
-    background-color: #fff; /* Changes background to pop out */
+    padding: 12px;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
 
-  /* Format individual rows */
+  /* Format individual rows to wrap comfortably */
   .table-container td { 
     border: none;
     border-bottom: 1px solid #eee; 
     position: relative;
-    padding-left: 35%; 
-    text-align: left;
-    padding-top: 8px;
+    padding-left: 0 !important; /* Clears out the squeezed side margins */
+    text-align: left;           /* Aligns text cleanly to the left */
+    padding-top: 24px;          /* Makes room for the label above the text */
     padding-bottom: 8px;
-	white-space: normal;
-	word-break: break-word;
+    white-space: normal !important; 
+    word-break: break-word;     
+    font-size: 16px;
   }
 
   .table-container td:last-child {
     border-bottom: 0;
   }
 
-  /* Add labels back to the left side of the screen */
-  .table-container td:nth-of-type(1):before { content: "Sire:"; }
-  .table-container td:nth-of-type(2):before { content: "Dam:"; }
-  .table-container td:nth-of-type(3):before { content: "Expected:"; }
-  .table-container td:nth-of-type(4):before { content: "Status:"; }
-
+  /* Move labels directly ABOVE the text content */
   .table-container td:before { 
     position: absolute;
-    left: 10px;
-    width: 30%;
-	padding-right: 10px;
-    white-space: nowrap;
-    text-align: left;
+    top: 4px;
+    left: 0;
+    width: 100%; 
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #777; /* Soft gray for the label headers */
     font-weight: bold;
   }
 }
