@@ -329,42 +329,47 @@ tr:hover {
     display: block; 
   }
 
-  /* Hide desktop headers */
+  /* Hide the traditional desktop header row */
   .table-container thead tr { 
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
 
-  /* Your nice white cards from the screenshot */
+  /* Turn each row into an independent card matching your screenshots */
   .table-container tr { 
-    border: 1px solid #eee; 
+    border: 1px solid #ccc; 
     margin-bottom: 20px;
     border-radius: 8px;
     padding: 15px;
     background-color: #fff; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
 
-  /* Center the text and clear out old side-paddings */
+  /* Format individual rows to center beautifully */
   .table-container td { 
     border: none;
-    border-bottom: 1px solid #f9f9f9; 
+    border-bottom: 1px solid #eee; 
     position: relative;
-    padding-top: 28px; /* Leaves a perfect window of space above the name */
+    padding-top: 30px; /* Leaves a perfect window of space directly above the name */
     padding-bottom: 10px;
     text-align: center; /* Keeps that clean centered look from your photo */
     white-space: normal;
-    font-size: 16px;
+    word-break: break-word;
   }
 
   .table-container td:last-child {
     border-bottom: 0;
   }
 
-  /* Automatically pulls the label text and places it centered above the name */
+  /* Add labels back perfectly centered above the text content (NO SPACES AROUND COLONS) */
+  .table-container td:nth-of-type(1):before { content: "Sire:"; }
+  .table-container td:nth-of-type(2):before { content: "Dam:"; }
+  .table-container td:nth-of-type(3):before { content: "Expected:"; }
+  .table-container td:nth-of-type(4):before { content: "Status:"; }
+
+  /* Style the labels nicely above the text */
   .table-container td:before { 
-    content: attr(data-label); /* Pulls "Sire", "Dam", etc., straight from HTML */
     position: absolute;
     top: 6px;
     left: 0;
